@@ -97,7 +97,11 @@ class ModelTrainer:
 
             if best_model_score<0.6:
                 raise CustomException("No best model found")
+            
             logging.info(f'Best model is {best_model_name} on both training and testing dataset')
+                        
+            model_rank=rank=[x for x in sorted(model_report.items(),key=lambda x:x[1],reverse=True)]
+            logging.info(f'model rank {model_rank} on both training and testing dataset')
 
             save_object(
                 file_path=self.model_trainer_config.trained_model_file_path,
