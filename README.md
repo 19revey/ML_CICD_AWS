@@ -24,8 +24,8 @@ newgrp docker
 
 ## Configure EC2 as self-hosted runner:
 
-## Setup github secrets:
 ### access key created from user with access to  1. AmazonEC2FullAccess 2. AmazonEC2ContainerRegistryFullAccess
+
 AWS_ACCESS_KEY_ID=
 
 AWS_SECRET_ACCESS_KEY=
