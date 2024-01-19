@@ -25,13 +25,13 @@ newgrp docker
 ## Configure EC2 as self-hosted runner:
 
 ## Setup github secrets:
-
+### access key created from user with access to  1. AmazonEC2FullAccess 2. AmazonEC2ContainerRegistryFullAccess
 AWS_ACCESS_KEY_ID=
 
 AWS_SECRET_ACCESS_KEY=
 
 AWS_REGION = us-east-1
 
-AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+AWS_ECR_LOGIN_URI = XXXX.dkr.ecr.us-east-1.amazonaws.com
 
-ECR_REPOSITORY_NAME = simple-app
+ECR_REPOSITORY_NAME = container_name
